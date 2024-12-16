@@ -1,0 +1,131 @@
+body {
+  font-family: Arial;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  justify-items: center;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  animation: slideDown 1s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.move-btn {
+  background-color: transparent;
+  border: solid 2px #fff;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: popIn 0.6s ease;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.move-btn:hover {
+  scale: 1.1;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.2);
+}
+
+.move-icon {
+  height: 100px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  animation: bounce 2s infinite ease;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.move-icon:hover {
+  scale: 1.1;
+  transform: rotate(10deg);
+}
+
+.score {
+  font-size: 20px;
+  margin: 20px;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff0000, 0 0 30px #ff0000;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff5500, 0 0 40px #ff5500;
+  }
+}
+
+.reset-btn {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    transform: scale(1.05);
+    background-color: #666;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+}
+
+.reset-btn:hover {
+  scale: 1.1;
+  background-color: #888;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+}

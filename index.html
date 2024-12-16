@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <p class="title">Rock Paper Scissors</p>
+    <button class="move-btn" onclick="playGame('Rock')">
+      <img src="assets/rock-emoji.png" class="move-icon" alt="Rock" />
+    </button>
+    <button class="move-btn" onclick="playGame('Paper')">
+      <img src="assets/paper-emoji.png" class="move-icon" alt="Paper" />
+    </button>
+    <button class="move-btn" onclick="playGame('Scissors')">
+      <img src="assets/scissors-emoji.png" class="move-icon" alt="Scissors" />
+    </button>
+    <p class="js-result result"></p>
+    <p class="js-move"></p>
+    <p class="js-score score"></p>
+    <button
+      onclick="
+    score.wins = 0, 
+    score.losses = 0, 
+    score.draws = 0
+    localStorage.removeItem('score');
+    updateScore();"
+      class="reset-btn"
+    >
+      Reset Score
+    </button>
+    <script src="script/index.js"></script>
+  </body>
+</html>
