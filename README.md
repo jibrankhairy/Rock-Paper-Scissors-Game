@@ -1,4 +1,4 @@
-Rock Paper Scissors 🎮  
+## Rock Paper Scissors 🎮  
 
 Welcome to the **Rock Paper Scissors Game**! This interactive game allows you to play the classic Rock, Paper, Scissors game against the computer. Designed with sleek animations and a clean UI, it's fun and easy to play!
 
